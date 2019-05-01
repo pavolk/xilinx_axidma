@@ -166,7 +166,7 @@ static void axidma_setup_vdma_config(struct xilinx_vdma_config *dma_config)
     dma_config->frm_dly = 0;            // Number of frames to delay
     dma_config->gen_lock = 0;           // Genlock, VDMA runs on fsyncs
     dma_config->master = 0;             // VDMA is the genlock master
-    dma_config->frm_cnt_en = 1;         // Interrupt based on frame count
+    dma_config->frm_cnt_en = 0;         // Interrupt based on frame count
     dma_config->park = 0;               // Continuously process all frames
     dma_config->park_frm = 0;           // Frame to stop (park) at (N/A)
     dma_config->coalesc = 1;            // Interrupt after one frame completion
